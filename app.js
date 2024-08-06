@@ -1,13 +1,13 @@
 const areaTexto = document.querySelector(".area-texto");
 const mensaje = document.querySelector(".mensaje");
 
-/*Claves de encriptación:
+/* Claves de encriptación:
 
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
+La letra "e" es convertida para "enter".
+La letra "i" es convertida para "imes".
 La letra "a" es convertida para "ai".
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"*/
+La letra "o" es convertida para "ober".
+La letra "u" es convertida para "ufat". */
 
 function botonEncriptar() {
     const textoEncriptado = encriptar(areaTexto.value);
@@ -41,4 +41,33 @@ function desencriptar(cadenaDesencriptada) {
         }
     }
     return cadenaDesencriptada;
+}
+
+function copiar() {
+    // Obtener el valor del área de texto con clase "mensaje":
+
+    var resultado = mensaje.value;
+
+    // Crear un elemento textarea temporal:
+
+    var tempAreaTexto = document.createElement("textarea");
+    tempAreaTexto.value = resultado;
+    document.body.appendChild(tempAreaTexto);
+
+    // Seleccionar el texto del textarea temporal:
+
+    tempAreaTexto.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempAreaTexto);
+
+    // Mostrar el mensaje de confirmación en la página:
+
+    var mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
+    mensajeConfirmacion.textContent = "Texto copiado al portapapeles.";
+
+    // Opcional: Puedes limpiar el mensaje después de unos segundos:
+
+    setTimeout(function() {
+        mensajeConfirmacion.textContent = "";
+    }, 3000); // 3000 ms = 3 segundos}
 }

@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="assets/logo-alura.png" alt="Logo de Alura Latam" class="logo">
+        <p>Encriptador de texto de Mariana</p>
     </header>
     <main>
         <section>
-            <textarea class="area-texto" id="" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea class="area-texto" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
             <div>
                 <h6 class="informacion">Sólo letras minúsculas y sin tildes.</h6>
             </div>
             <div class="botones">
-                <button class="boton-encriptar" onclick=botonEncriptar()>Encriptar</button>
-                <button class="boton-desencriptar" onclick=botonDesencriptar()>Desencriptar</button>
+                <button class = "boton-encriptar" onclick = "botonEncriptar()">Encriptar</button>
+                <button class = "boton-desencriptar" onclick = "botonDesencriptar()">Desencriptar</button>
             </div>
         </section>
         <section>
-            <textarea name="" id="" cols="20" rows="10" class="mensaje"></textarea>
-            <div>
-                <button class="boton-copiar">Copiar</button>
+            <textarea cols="30" rows="10" class="mensaje"></textarea>
+            <div class="copiar">
+                <button class = "boton-copiar" onclick = "copiar()">Copiar</button>
+                <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
             </div>
         </section>
     </main>
     <footer>
-        
+        <footer class="footer"><p>Desarrollado por Mariana A. Lois</p></footer>
     </footer>
     <script src="app.js"></script>
 </body>
