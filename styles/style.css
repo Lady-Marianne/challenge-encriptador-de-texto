@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --fuente: "Inter", sans-serif;
+    --color-fondo: #F3F5FC;
+    --color-fondo-boton: #D8DFE8;
+    --color-primario: #0A3871;
+    --color-secundario: white;
+    --color-terciario: #495057;
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+    background: var(--color-fondo);
+    font-family: var(--fuente);
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.area-texto {
+    border: none;
+    color: var(--color-primario);
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder { color: var(--color-primario); }
+    .area-texto:focus {
+        outline: none;
+    }
+
+.mensaje {
+    background: var(--color-secundario);
+    background-image: url("/assets/munieco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: var(--color-primario);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.boton-encriptar {
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.boton-desencriptar {
+    background: var(--color-fondo-boton);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color: var(--color-primario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+
+    width: 328px;
+}
+
+.boton-copiar {
+    background: var(--color-fondo-boton);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color: var(--color-primario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: fixed;
+    width: 336px;
+}
+
+.informacion {
+    color: var(--color-terciario);
+    font-size: 18px;
+}
+

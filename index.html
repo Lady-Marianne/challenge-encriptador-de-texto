@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo-alura.png" alt="Logo de Alura Latam" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="area-texto" id="" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Sólo letras minúsculas y sin tildes.</h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick=botonEncriptar()>Encriptar</button>
+                <button class="boton-desencriptar" onclick=botonDesencriptar()>Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea name="" id="" cols="20" rows="10" class="mensaje"></textarea>
+            <div>
+                <button class="boton-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
