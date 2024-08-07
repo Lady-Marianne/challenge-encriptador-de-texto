@@ -44,12 +44,14 @@ main {
     line-height: 150%;
     font-size: 2rem;
     padding: 0% 5% 0% 5%;
+    gap: 3rem;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem
+    gap: 1.5rem;
+    width: 50%;
 }
 
 .area-texto {
@@ -61,8 +63,9 @@ section {
     width: 100%;
     overflow-y: auto;
     resize: none;
+    border-radius: 20px;
+    padding: 2%;
 }
-
 
 ::placeholder {font-family: var(--fuente-secundaria);}
     .area-texto:focus {
@@ -72,18 +75,22 @@ section {
 .informacion {
     color: var(--color-terciario);
     font-family: var(--fuente-secundaria);
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .mensaje {
     background: var(--color-secundario);
     height: 100%;
     width: 100%;
+    margin-top: 1.2rem;
     background-image: url("/assets/munieco.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    border-radius: 0.7rem;
+    border-radius: 20px;
+    resize: none;
+    padding: 2%;
 }
 
 .mensaje:focus {
@@ -145,6 +152,5 @@ section {
     margin-top: 2rem;
     padding: 2%;
     text-align: center;
-
 }
 
