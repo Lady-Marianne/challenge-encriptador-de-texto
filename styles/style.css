@@ -3,7 +3,6 @@
 :root {
     --fuente-primaria: "Raleway", sans-serif;
     --fuente-secundaria: "Inter", sans-serif; 
-    --color-fondo: #F3F5FC;
     --color-fondo-boton: #D8DFE8;
     --color-primario: #0A3871;
     --color-secundario: #E7E3C6;
@@ -86,7 +85,7 @@ section {
 .mensaje {
     background: var(--color-secundario);
     height: 100%;
-    width: 20.5rem;
+    width: 100%;
     margin-top: 1.2rem;
     background-image: url("/assets/munieco.png");
     background-repeat: no-repeat;
@@ -117,7 +116,7 @@ section {
     width: 20.5rem;
 }
 
-.boton-desencriptar {
+.boton-desencriptar, .boton-copiar {
     background: var(--color-fondo-boton);
     border: 1px solid var(--color-primario);
     color: var(--color-primario);
@@ -131,16 +130,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.boton-copiar {
-    background: var(--color-fondo-boton);
-    border: 1px solid var(--color-primario);
-    border-radius: 24px;
-    color: var(--color-primario);
-    cursor: pointer;
-    height: 4.2rem;
-    width: 20.5rem;
 }
 
 .mensaje-confirmacion {
@@ -197,9 +186,6 @@ section {
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
         width: 100%;
     }
-
-    .mensaje {
-        width: 100%;
-    }
 }
+
 
