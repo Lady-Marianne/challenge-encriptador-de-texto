@@ -49,11 +49,10 @@ function copiar() {
     var tempAreaTexto = document.createElement("textarea");
     tempAreaTexto.value = resultado;
     document.body.appendChild(tempAreaTexto);
-
     tempAreaTexto.select();
     document.execCommand("copy");
     document.body.removeChild(tempAreaTexto);
     var mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
-    mensajeConfirmacion.textContent = "Texto copiado al portapapeles.";
+    mensajeConfirmacion.textContent = "Texto copiado al portapapeles";
     setTimeout(function() {mensajeConfirmacion.textContent = "";}, 5000);
 }
