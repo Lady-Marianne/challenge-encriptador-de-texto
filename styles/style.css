@@ -53,6 +53,7 @@ main {
 section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     width: 50%;
 }
@@ -85,7 +86,7 @@ section {
 .mensaje {
     background: var(--color-secundario);
     height: 100%;
-    width: 100%;
+    width: 20.5rem;
     margin-top: 1.2rem;
     background-image: url("/assets/munieco.png");
     background-repeat: no-repeat;
