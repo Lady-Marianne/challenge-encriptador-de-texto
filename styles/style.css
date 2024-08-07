@@ -18,7 +18,6 @@
 }
 
 body {
-    /*box-sizing: border-box; */
     color: var(--color-primario);
     font-family: var(--fuente-primaria);
     background-image: url("/assets/letras.jpg");
