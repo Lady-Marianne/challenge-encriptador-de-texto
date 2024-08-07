@@ -6,31 +6,35 @@
     --color-fondo: #F3F5FC;
     --color-fondo-boton: #D8DFE8;
     --color-primario: #0A3871;
-    --color-secundario: white;
+    --color-secundario: #E7E3C6;
     --color-terciario: #495057;
     }
 
-* { padding: 0;
+* { 
+    padding: 0;
     margin: 0;
     font-size: 1.2rem;
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box; 
-    background-color: var(--color-fondo);
+    /*box-sizing: border-box; */
     color: var(--color-primario);
     font-family: var(--fuente-primaria);
+    background-image: url("/assets/letras.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
     display: flex;
-    padding: 2%;
+    padding: 1.5rem;
     justify-content: left;
     gap: 5rem;
 }
 
 .logo {
-    padding-top: 0.7rem;
     margin-left: 0.7rem;
     width: 14%;
     height: 12%;
@@ -115,10 +119,10 @@ section {
 .boton-desencriptar {
     background: var(--color-fondo-boton);
     border: 1px solid var(--color-primario);
+    color: var(--color-primario);
     border-radius: 24px;
     cursor: pointer;
     height: 4.2rem;
-    /*margin-left: 1.8rem;*/
     width: 20.5rem;
 }
 
@@ -132,40 +136,48 @@ section {
     background: var(--color-fondo-boton);
     border: 1px solid var(--color-primario);
     border-radius: 24px;
+    color: var(--color-primario);
     cursor: pointer;
     height: 4.2rem;
     width: 20.5rem;
 }
 
 .mensaje-confirmacion {
-    background: var(--color-secundario);
     color: var(--color-terciario);
     display: inline-block;
-    border-radius: 5px;
-    font-size: 1.125rem;
     visibility: visible;
     text-align: center;
+    font-family: var(--fuente-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .footer {
-    margin-top: 2rem;
-    padding: 2%;
+    padding: 1.5rem;
     text-align: center;
 }
 
 @media (max-width:1000px) {
+
+    body {
+        padding: 0%, 0%, 0%, 0%;
+        height: 100%;
+    }
     .header {
         gap: 1rem;
     }
+
     .logo{
         width: 100%;
         height: 100%;
     }
+
     main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
+
     section {
         width: 100%;
         justify-content: center;
