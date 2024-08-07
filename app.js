@@ -44,30 +44,22 @@ function desencriptar(cadenaDesencriptada) {
 }
 
 function copiar() {
-    // Obtener el valor del área de texto con clase "mensaje":
 
     var resultado = mensaje.value;
-
-    // Crear un elemento textarea temporal:
-
+    //Crear un elemento textarea temporal:
     var tempAreaTexto = document.createElement("textarea");
     tempAreaTexto.value = resultado;
     document.body.appendChild(tempAreaTexto);
 
     // Seleccionar el texto del textarea temporal:
-
     tempAreaTexto.select();
     document.execCommand("copy");
     document.body.removeChild(tempAreaTexto);
 
     // Mostrar el mensaje de confirmación en la página:
-
     var mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
     mensajeConfirmacion.textContent = "Texto copiado al portapapeles.";
 
-    // Opcional: Puedes limpiar el mensaje después de unos segundos:
-
-    setTimeout(function() {
-        mensajeConfirmacion.textContent = "";
-    }, 3000); // 3000 ms = 3 segundos}
+    //Limpiar el mensaje después de unos segundos:
+    setTimeout(function() {mensajeConfirmacion.textContent = "";}, 5000);
 }
