@@ -197,5 +197,9 @@ section {
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
         width: 100%;
     }
+
+    .mensaje {
+        width: 100%;
+    }
 }
 
