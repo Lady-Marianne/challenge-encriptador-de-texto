@@ -2,6 +2,8 @@ const areaTexto = document.querySelector(".area-texto");
 const mensaje = document.querySelector(".mensaje");
 const botonCopiar = document.querySelector(".boton-copiar");
 
+window.onload = function() {document.querySelector('.ocultar').classList.remove('hidden');};
+
 /* Claves de encriptación:
 
 La letra "e" es convertida para "enter".
@@ -59,4 +61,4 @@ function copiar() {
     setTimeout(function() {mensajeConfirmacion.textContent = "";}, 5000);
 }
 
-window.onload = function() {document.body.querySelector('.ocultar').classList.remove('hidden');};
+window.onload = function() {document.querySelector('.ocultar').classList.remove('hidden');};

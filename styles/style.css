@@ -97,6 +97,7 @@ section {
     border-radius: 24px;
     padding: 2%;
     text-align: center;
+    z-index: 10;
 }
 
 .mensaje, .copiar {
@@ -105,7 +106,8 @@ section {
 }
 
 .hidden {
-    display: none; /* Oculta el elemento cuando se activa.+*/}
+    display: none;
+}
 
 .mensaje {
     background: var(--color-secundario);
