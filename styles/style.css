@@ -55,6 +55,7 @@ section {
     align-items: center;
     gap: 1.5rem;
     width: 50%;
+    position: relative;
 }
 
 .area-texto {
@@ -82,14 +83,35 @@ section {
     font-weight: 400;
 }
 
+.ocultar {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-secundario);
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 24px;
+    padding: 2%;
+    text-align: center;
+}
+
+.mensaje, .copiar {
+    position: relative;
+    z-index: 1; /* Asegura que estos elementos estén debajo de "ocultar". */
+}
+
+.hidden {
+    display: none; /* Oculta el elemento cuando se activa.+*/}
+
 .mensaje {
     background: var(--color-secundario);
     height: 100%;
     width: 65%;
     margin-top: 1.2rem;
-    background-image: url("/assets/munieco.png");
-    background-repeat: no-repeat;
-    background-position: center;
     border: none;
     border-radius: 20px;
     resize: none;
@@ -125,6 +147,11 @@ section {
     height: 4.2rem;
     width: 17rem;
 }
+.copiar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .boton-copiar {
     background-color: var(--color-fondo-boton);
@@ -134,12 +161,6 @@ section {
     cursor: pointer;
     height: 4.2rem;
     width: 20.5rem;
-}
-
-.copiar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .mensaje-confirmacion {
@@ -201,11 +222,7 @@ footer {
         width: 100%;
     }
 
-    .copiar {
-        width: 100%;
-    }
-
-    .mensaje {
+    .copiar, .ocultar, .mensaje {
         width: 100%;
     }
 }

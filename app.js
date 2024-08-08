@@ -15,6 +15,7 @@ function botonEncriptar() {
     mensaje.value = textoEncriptado;
     areaTexto.value = "";
     mensaje.style.backgroundImage = "none";
+    document.querySelector('.ocultar').classList.add('hidden'); // Oculta el div 'ocultar'.
 }
 
 function encriptar(cadenaEncriptada) {
@@ -32,6 +33,7 @@ function botonDesencriptar() {
     const textoEncriptado = desencriptar(areaTexto.value);
     mensaje.value = textoEncriptado;
     areaTexto.value = "";
+    document.querySelector('.ocultar').classList.add('hidden'); // Oculta el div 'ocultar'.
 }
 
 function desencriptar(cadenaDesencriptada) {
@@ -56,3 +58,5 @@ function copiar() {
     mensajeConfirmacion.textContent = "Texto copiado al portapapeles";
     setTimeout(function() {mensajeConfirmacion.textContent = "";}, 5000);
 }
+
+window.onload = function() {document.body.querySelector('.ocultar').classList.remove('hidden');};
