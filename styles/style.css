@@ -12,8 +12,8 @@
 * { 
     padding: 0;
     margin: 0;
-    font-size: 1.2rem;
     box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 body {
@@ -46,7 +46,7 @@ main {
     line-height: 150%;
     font-size: 2rem;
     padding: 0% 5% 0% 5%;
-    gap: 3rem;
+    gap: 1.5%;
 }
 
 section {
@@ -152,15 +152,20 @@ section {
     font-weight: 400;
 }
 
-.footer {
+footer {
     padding: 1.5rem;
     text-align: center;
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1200px) {
+    .botones {
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
 
     body {
-        padding: 0%, 0%, 0%, 0%;
         height: 100%;
         background-image: url("/assets/texto.jpg");
 
@@ -190,7 +195,6 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
