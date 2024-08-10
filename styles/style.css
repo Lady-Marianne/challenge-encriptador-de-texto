@@ -84,7 +84,7 @@ section {
 }
 
 .ocultar {
-    position: absolute;
+    position:absolute;
     width: 65%;
     height: 100%;
     background-color: var(--color-secundario);
@@ -97,7 +97,7 @@ section {
     border-radius: 24px;
     padding: 2%;
     text-align: center;
-    z-index: 10;
+    z-index: 10; /* Asegura que "ocultar" tape el área de texto "mensaje". */
 }
 
 .mensaje, .copiar {
@@ -137,7 +137,7 @@ section {
     color: var(--color-secundario);
     cursor: pointer;
     height: 4.2rem;
-    width: 19rem;
+    width: 15rem;
 }
 
 .boton-desencriptar {
@@ -147,7 +147,7 @@ section {
     border-radius: 24px;
     cursor: pointer;
     height: 4.2rem;
-    width: 17rem;
+    width: 15rem;
 }
 .copiar {
     display: flex;
@@ -162,7 +162,7 @@ section {
     border-radius: 24px;
     cursor: pointer;
     height: 4.2rem;
-    width: 20.5rem;
+    width: 20.2rem;
 }
 
 .mensaje-confirmacion {
@@ -191,8 +191,8 @@ footer {
     body {
         height: 100%;
         background-image: url("../assets/texto.jpg");
-
     }
+
     .header {
         gap: 1rem;
     }
@@ -226,6 +226,16 @@ footer {
 
     .copiar, .ocultar, .mensaje {
         width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .ocultar img {
+        height: 50%;
+    }
+
+    .ocultar h1, .ocultar p {
+        font-size: 1rem;
     }
 }
 
