@@ -172,7 +172,7 @@ section {
     width: 20.2rem;
 }
 
-.mensaje-confirmacion {
+.mensaje-confirmacion, .mensaje-error {
     color: var(--color-terciario);
     display: inline-block;
     visibility: visible;
