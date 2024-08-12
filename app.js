@@ -13,12 +13,12 @@ La letra "o" es convertida para "ober".
 La letra "u" es convertida para "ufat". */
 
 function botonEncriptar() {
-    if (areaTexto.value=="") {
+    if (areaTexto.value==="") {
         var mensajeError = document.getElementById("mensaje-error");
         mensajeError.textContent = "Por favor ingrese un texto o palabra.";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
-    else if (/[^a-z/s]/.test(areaTexto.value)) {
+    else if (/[^a-z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
         mensajeError.textContent = "Por favor, ingrese texto simple sin caracteres especiales ni tildes.";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
@@ -49,7 +49,7 @@ function botonDesencriptar() {
         mensajeError.textContent = "Por favor ingrese un texto o palabra.";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
-    else if (/[^a-z/s]/.test(areaTexto.value)) {
+    else if (/[^a-z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
         mensajeError.textContent = "Por favor, ingrese texto simple sin caracteres especiales ni tildes.";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);

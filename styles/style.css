@@ -91,7 +91,7 @@ section {
 }
 
 .ocultar {
-    position:absolute;
+    position: absolute;
     width: 65%;
     height: 100%;
     background-color: var(--color-secundario);
@@ -105,6 +105,10 @@ section {
     padding: 2%;
     text-align: center;
     z-index: 10; /* Asegura que "ocultar" tape el área de texto "mensaje". */
+}
+
+.ocultar h2, .ocultar p {
+    font-size: 1rem;
 }
 
 .mensaje, .copiar {
@@ -183,8 +187,10 @@ section {
 }
 
 footer {
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
+    background-color: var(--color-secundario);
+    margin-top: 3%;
 }
 
 @media (max-width: 1200px) {
@@ -239,10 +245,6 @@ footer {
 @media (max-width: 650px) {
     .ocultar img {
         height: 50%;
-    }
-
-    .ocultar h1, .ocultar p {
-        font-size: 1rem;
     }
 }
 
