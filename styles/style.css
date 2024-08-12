@@ -42,6 +42,7 @@ body {
 main {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     font-weight: 400;
     line-height: 150%;
     font-size: 2rem;
@@ -63,7 +64,7 @@ section {
     border: none;
     margin-top: 1.25rem;
     text-transform: lowercase;
-    height: 100%;
+    height: auto;
     width: 100%;
     overflow-y: auto;
     resize: none;
@@ -84,7 +85,6 @@ section {
     font-family: var(--fuente-secundaria);
     font-size: 1rem;
     font-weight: 400;
-    padding: 10px;
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -93,12 +93,11 @@ section {
 .ocultar {
     position: absolute;
     width: 65%;
-    height: 100%;
+    height: auto;
     background-color: var(--color-secundario);
     margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: none;
     border-radius: 24px;
@@ -114,6 +113,10 @@ section {
 .mensaje, .copiar {
     position: relative;
     z-index: 1; /* Asegura que estos elementos estén debajo de "ocultar". */
+}
+
+.mensaje {
+    padding: 2%;
 }
 
 .hidden {
@@ -161,10 +164,16 @@ section {
     width: 15rem;
 }
 .copiar {
+    margin-top: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/*.texto-procesado {
+    height: auto;
+    max-height: 100%;
+}*/
 
 .boton-copiar {
     background-color: var(--color-fondo-boton);
