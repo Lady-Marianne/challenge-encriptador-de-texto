@@ -170,11 +170,6 @@ section {
     align-items: center;
 }
 
-/*.texto-procesado {
-    height: auto;
-    max-height: 100%;
-}*/
-
 .boton-copiar {
     background-color: var(--color-fondo-boton);
     border: 1px solid var(--color-primario);
