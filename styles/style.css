@@ -77,10 +77,17 @@ section {
     }
 
 .informacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--color-terciario);
     font-family: var(--fuente-secundaria);
     font-size: 1rem;
     font-weight: 400;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .ocultar {
