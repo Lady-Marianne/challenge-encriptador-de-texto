@@ -74,7 +74,7 @@ function desencriptar(cadenaDesencriptada) {
 }
 
 function copiar() {
-    var resultado = texto-procesado.value;
+    var resultado = mensaje.value;
     var tempAreaTexto = document.createElement("textarea");
     tempAreaTexto.value = resultado;
     document.body.appendChild(tempAreaTexto);
