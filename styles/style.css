@@ -7,6 +7,7 @@
     --color-primario: #0A3871;
     --color-secundario: #E7E3C6;
     --color-terciario: #495057;
+    --color-footer: #baac87;
     }
 
 * { 
@@ -198,7 +199,7 @@ main {
     padding: 0.5rem 0 0 0;
     text-align: center;
     justify-content: center;
-    background-color: var(--color-secundario);
+    background-color: var(--color-footer);
     margin: 5% 0 0 0;    
 }
 
