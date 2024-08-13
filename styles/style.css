@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: fit-content;
+    min-height: 100vh;
 }
 
 .header {
@@ -167,7 +167,7 @@ main {
     width: 12rem;
 }
 .copiar {
-    margin-top: 13%;
+    margin: 12% 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,6 +235,10 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    
+    .copiar {
+        margin: 7% 0 0 0;
     }
 }
 
