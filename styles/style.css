@@ -13,7 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 body {
@@ -28,15 +28,15 @@ body {
 
 .header {
     display: flex;
-    padding: 1.5rem;
+    padding: 1rem;
     justify-content: left;
     gap: 5rem;
+    align-items: center;
 }
 
 .logo {
     margin-left: 0.7rem;
-    width: 14%;
-    height: 12%;
+    width: 2%;
 }
 
 main {
@@ -44,16 +44,17 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     font-weight: 400;
-    line-height: 150%;
+    line-height: normal;
     font-size: 2rem;
     padding: 0% 5% 0% 5%;
     gap: 1.5%;
 }
 
-section {
+.seccion-izquierda, .seccion-derecha {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
     width: 50%;
     position: relative;
@@ -64,7 +65,7 @@ section {
     border: none;
     margin-top: 1.25rem;
     text-transform: lowercase;
-    height: auto;
+    height: 100%;
     width: 100%;
     overflow-y: auto;
     resize: none;
@@ -77,9 +78,10 @@ section {
         outline: none;
     }
 
-.informacion {
+.advertencia {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     color: var(--color-terciario);
     font-family: var(--fuente-secundaria);
@@ -92,8 +94,8 @@ section {
 
 .ocultar {
     position: absolute;
-    width: 65%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-secundario);
     margin-top: 1.2rem;
     display: flex;
@@ -106,35 +108,34 @@ section {
     z-index: 10; /* Asegura que "ocultar" tape el área de texto "mensaje". */
 }
 
-.ocultar h2, .ocultar p {
-    font-size: 1rem;
+.contenedor-derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.mensaje, .copiar {
+.texto-procesado, .copiar {
     position: relative;
     z-index: 1; /* Asegura que estos elementos estén debajo de "ocultar". */
-}
-
-.mensaje {
-    padding: 2%;
 }
 
 .hidden {
     display: none;
 }
 
-.mensaje {
+.texto-procesado {
     background: var(--color-secundario);
     height: 100%;
-    width: 65%;
-    margin-top: 1.2rem;
+    width: 100%;
+    margin: 1.2rem 0 2rem 0;
     border: none;
     border-radius: 20px;
     resize: none;
     padding: 2%;
 }
 
-.mensaje:focus {
+.texto-procesado:focus {
     outline: none;
 }
 
@@ -150,8 +151,8 @@ section {
     border-radius: 24px;
     color: var(--color-secundario);
     cursor: pointer;
-    height: 4.2rem;
-    width: 15rem;
+    height: 4rem;
+    width: 12rem;
 }
 
 .boton-desencriptar {
@@ -160,8 +161,8 @@ section {
     color: var(--color-primario);
     border-radius: 24px;
     cursor: pointer;
-    height: 4.2rem;
-    width: 15rem;
+    height: 4rem;
+    width: 12rem;
 }
 .copiar {
     margin-top: 13%;
@@ -176,8 +177,8 @@ section {
     color: var(--color-primario);
     border-radius: 24px;
     cursor: pointer;
-    height: 4.2rem;
-    width: 20.2rem;
+    height: 4rem;
+    width: 12rem;
 }
 
 .mensaje-confirmacion, .mensaje-error {
@@ -190,11 +191,12 @@ section {
     font-weight: 400;
 }
 
-footer {
+.footer {
     padding: 1rem;
     text-align: center;
     background-color: var(--color-secundario);
-    margin-top: 3%;
+    margin: 5% 0 0 0;
+    
 }
 
 @media (max-width: 1200px) {
@@ -215,8 +217,7 @@ footer {
     }
 
     .logo{
-        width: 100%;
-        height: 100%;
+        width: 25%;
     }
 
     main {
@@ -225,7 +226,7 @@ footer {
         flex-direction: column;
     }
 
-    section {
+    .seccion-izquierda, .seccion-derecha {
         width: 100%;
         justify-content: center;
         text-align: center;
@@ -241,14 +242,14 @@ footer {
         width: 100%;
     }
 
-    .copiar, .ocultar, .mensaje {
+    .copiar, .ocultar, .texto-procesado {
         width: 100%;
     }
 }
 
 @media (max-width: 650px) {
     .ocultar img {
-        height: 50%;
+        width: 70%;
     }
 }
 

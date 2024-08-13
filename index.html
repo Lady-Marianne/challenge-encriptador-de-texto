@@ -9,13 +9,13 @@
 </head>
 <body>
     <header class="header">
-        <img src="./assets/logo-alura.png" alt="Logo de Alura Latam" class="logo">
+        <img src="../assets/logo.svg" alt="Logo de Alura Latam" class="logo">
         <h1>Encriptador de texto de Mariana</h1>
     </header>
     <main>
-        <section>
+        <section class="seccion-izquierda">
             <textarea class="area-texto" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
-            <div class="informacion">
+            <div class="advertencia">
                 <img src="./assets/exclamacion.png" alt="Ícono de advertencia">
                 <h6>Sólo letras minúsculas y sin tildes.</h6>
             </div>
@@ -25,22 +25,24 @@
             </div>
             <span id="mensaje-error" class="mensaje-error"></span>
         </section>
-        <section>
+        <section class="seccion-derecha">
             <div class="ocultar">
-                <img src="./assets/munieco.png" alt="Un muñeco con una lupa" class="munieco">
+                <img src="../assets/munieco.png" alt="Un muñeco con una lupa" class="munieco">
                 <h2>Ningún mensaje fue encontrado:</h2>
                 <p>Ingrese el texto que desea encriptar o desencriptar.</p>
             </div>
-            <textarea cols="30" rows="10" class="mensaje"></textarea>
-            <div class="copiar">
-                <button class = "boton-copiar" onclick = "copiar()">Copiar</button>
-                <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
+            <div class="contenedor-derecho">
+                <textarea cols="30" rows="10" class="texto-procesado"></textarea>
+                <div class="copiar">
+                    <button class = "boton-copiar" onclick = "copiar()">Copiar</button>
+                    <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por Mariana A. Lois</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="../scripts/app.js"></script>
 </body>
 </html>
