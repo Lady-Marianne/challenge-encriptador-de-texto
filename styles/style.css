@@ -162,6 +162,12 @@ main {
     cursor: pointer;
     height: 4rem;
     width: 12rem;
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color. */
+}
+
+.boton-encriptar:hover {
+    background-color: var(--color-fondo-boton);
+    color: var(--color-primario);
 }
 
 .boton-desencriptar {
@@ -172,7 +178,14 @@ main {
     cursor: pointer;
     height: 4rem;
     width: 12rem;
+    transition: background-color 0.3s ease;
 }
+
+.boton-desencriptar:hover {
+    color: var(--color-fondo-boton);
+    background-color: var(--color-primario);
+}
+
 .copiar {
     margin: 9% 0 0 0;
     display: flex;
@@ -188,6 +201,12 @@ main {
     cursor: pointer;
     height: 4rem;
     width: 12rem;
+    transition: background-color 0.3s ease;
+}
+
+.boton-copiar:hover {
+    color: var(--color-fondo-boton);
+    background-color: var(--color-primario);
 }
 
 .mensaje-confirmacion, .mensaje-error {
