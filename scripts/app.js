@@ -15,12 +15,12 @@ La letra "u" es convertida para "ufat". */
 function botonEncriptar() {
     if (areaTexto.value==="") {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "Por favor ingrese un texto o palabra.";
+        mensajeError.textContent = "¡Por favor, ingrese un texto o palabra!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
     else if (/[^a-z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "Por favor, ingrese texto simple sin caracteres especiales ni tildes.";
+        mensajeError.textContent = "¡Por favor, ingrese texto simple sin caracteres especiales ni tildes!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
     else {
@@ -46,12 +46,12 @@ function encriptar(cadenaEncriptada) {
 function botonDesencriptar() {
     if (areaTexto.value=="") {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "Por favor ingrese un texto o palabra.";
+        mensajeError.textContent = "¡Por favor, ingrese un texto o palabra!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
     else if (/[^a-z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "Por favor, ingrese texto simple sin caracteres especiales ni tildes.";
+        mensajeError.textContent = "¡Por favor, ingrese texto simple sin caracteres especiales ni tildes!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
         return;
     }
@@ -82,6 +82,6 @@ function copiar() {
     document.execCommand("copy");
     document.body.removeChild(tempAreaTexto);
     var mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
-    mensajeConfirmacion.textContent = "Texto copiado al portapapeles";
+    mensajeConfirmacion.textContent = "Texto copiado al portapapeles.";
     setTimeout(function() {mensajeConfirmacion.textContent = "";}, 5000);
 }

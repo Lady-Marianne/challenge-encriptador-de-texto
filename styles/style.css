@@ -5,8 +5,9 @@
     --fuente-secundaria: "Inter", sans-serif; 
     --color-fondo-boton: #D8DFE8;
     --color-primario: #0A3871;
-    --color-secundario: #E7E3C6;
+    --color-secundario: #ada5ae;
     --color-terciario: #495057;
+    --color-error: red;
     --color-footer: #baac87;
     }
 
@@ -15,17 +16,20 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 1.1rem;
-    height: fit-content;
+
 }
 
 body {
     color: var(--color-primario);
     font-family: var(--fuente-primaria);
-    background-image: url("../assets/letras.jpg");
+    background-image: url("../assets/ondas.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -43,6 +47,7 @@ body {
 
 main {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: flex-start;
     font-weight: 400;
@@ -57,7 +62,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 50%;
     position: relative;
 }
@@ -82,6 +87,7 @@ main {
 
 .advertencia {
     display: flex;
+    gap: 0.5rem;
     align-items: center;
     justify-content: center;
     color: var(--color-terciario);
@@ -168,7 +174,7 @@ main {
     width: 12rem;
 }
 .copiar {
-    margin: 12% 0 0 0;
+    margin: 9% 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,13 +191,21 @@ main {
 }
 
 .mensaje-confirmacion, .mensaje-error {
-    color: var(--color-terciario);
     display: inline-block;
     visibility: visible;
     text-align: center;
     font-family: var(--fuente-secundaria);
     font-size: 1rem;
     font-weight: 400;
+}
+
+.mensaje-confirmacion {
+    color: var(--color-terciario);
+    margin: 6% 0 0 0;
+}
+
+.mensaje-error {
+    color: var(--color-error);
 }
 
 .footer {
@@ -202,24 +216,23 @@ main {
     justify-content: center;
     background-color: var(--color-footer);
     font-weight: 600;
-    margin: 5% 0 0 0;    
+    margin: 6.7% 0 0 0;   
+    position: relative;
+    bottom: 0;
+    flex-shrink: 0;
 }
 
 .footer img {
     width: 2.5rem;
 }
 
-@media (max-widht:1200px) {
+@media (max-width:1200px) {
     .botones {
         width: 100%;
     }
 }
 
 @media (max-width:1024px) {
-
-    body {
-        background-image: url("../assets/texto.jpg");
-    }
 
     .header {
         gap: 1rem;
@@ -237,6 +250,10 @@ main {
 
     .seccion-izquierda, .seccion-derecha {
         width: 100%;
+    }
+
+    .advertencia {
+        align-items: flex-start;
     }
 
     .botones {
