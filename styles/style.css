@@ -209,7 +209,7 @@ main {
     width: 2.5rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-widht:1200px) {
     .botones {
         width: 100%;
     }
@@ -256,7 +256,7 @@ main {
 
 @media (max-width: 768px) {
     .ocultar img {
-        width: 70%;
+        width: 50%;
     }
 }
 
