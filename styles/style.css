@@ -268,7 +268,14 @@ main {
 
     .seccion-izquierda, .seccion-derecha {
         width: 100%;
-    } 
+    }
+
+    .copiar {
+        width: 100%;
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar {
+        width: 100%;
+    }
 
     .ocultar img {
         width: 50%;
