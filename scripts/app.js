@@ -20,7 +20,7 @@ function botonEncriptar() {
     }
     else if (/[^a-z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "¡Por favor, ingrese texto simple sin caracteres especiales ni tildes!";
+        mensajeError.textContent = "¡Por favor ingrese sólo minúsculas sin caracteres especiales ni tildes!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
     else {
@@ -34,7 +34,6 @@ function botonEncriptar() {
 
 function encriptar(cadenaEncriptada) {
     let matrizCodigo = [["e", "enter"],["i", "imes"],["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-    cadenaEncriptada = cadenaEncriptada.toLowerCase();
     for(let i = 0; i < matrizCodigo.length; i++) {
         if(cadenaEncriptada.includes(matrizCodigo[i][0])) {
             cadenaEncriptada = cadenaEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
@@ -51,7 +50,7 @@ function botonDesencriptar() {
     }
     else if (/[^a-z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "¡Por favor, ingrese texto simple sin caracteres especiales ni tildes!";
+        mensajeError.textContent = "¡Por favor, ingrese sólo minúsculas sin caracteres especiales ni tildes!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
         return;
     }
