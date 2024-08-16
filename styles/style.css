@@ -26,7 +26,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,6 +102,7 @@ main {
     background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: none;
     border-radius: 24px;
@@ -135,6 +136,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    width: 100%;
 }
 
 .boton-encriptar {
@@ -228,7 +230,7 @@ main {
 @media(max-width:1200px) {
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
         width: 14rem;
-    }
+    }    
 }
 
 @media (max-width:1024px) {
@@ -256,7 +258,7 @@ main {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
 
     main {
         align-items: center;
@@ -266,8 +268,13 @@ main {
 
     .seccion-izquierda, .seccion-derecha {
         width: 100%;
-    }
+    } 
+
     .ocultar img {
         width: 50%;
-    }   
+    }
+    
+    .footer {
+        margin-top: 5rem;
+    }
 }
