@@ -260,6 +260,9 @@ main {
 
 @media (max-width: 920px) {
 
+    body {
+        padding: 0 1% 0 1%;
+    }
     main {
         align-items: center;
         justify-content: center;
