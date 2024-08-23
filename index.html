@@ -20,11 +20,11 @@
                 <img src="./assets/exclamacion.svg" alt="Ícono de advertencia">
                 <h6>Sólo letras minúsculas y sin tildes.</h6>
             </div>
+            <span id="mensaje-error" class="mensaje-error"></span>
             <div class="botones">
                 <button class = "boton-encriptar" onclick = "botonEncriptar()">Encriptar</button>
                 <button class = "boton-desencriptar" onclick = "botonDesencriptar()">Desencriptar</button>
             </div>
-            <span id="mensaje-error" class="mensaje-error"></span>
         </section>
         <section class="seccion-derecha">
             <div class="ocultar">
@@ -34,9 +34,9 @@
             </div>
             <div class="contenedor-derecho">
                 <textarea cols="30" rows="10" class="texto-procesado"></textarea>
+                <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
                 <div class="copiar">
                     <button class = "boton-copiar" onclick = "copiar()">Copiar</button>
-                    <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
                 </div>
             </div>
         </section>

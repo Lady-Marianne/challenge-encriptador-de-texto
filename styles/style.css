@@ -60,10 +60,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     width: 50%;
     position: relative;
+    resize: none;
 }
 
 .area-texto, .texto-procesado {
@@ -139,6 +140,11 @@ main {
     width: 100%;
 }
 
+.copiar {
+    display: flex;
+    margin-top: 5.3%;
+}
+
 .boton-encriptar {
     background-color: var(--color-primario);
     border: 1px solid var(--color-primario);
@@ -147,28 +153,10 @@ main {
     cursor: pointer;
     height: 4rem;
     width: 18rem;
-    transition: background-color 0.3s ease; /* Suaviza el cambio de color. */
-}
-
-.boton-desencriptar {
-    background-color: var(--color-fondo-boton);
-    border: 1px solid var(--color-primario);
-    color: var(--color-primario);
-    border-radius: 24px;
-    cursor: pointer;
-    height: 4rem;
-    width: 18rem;
     transition: background-color 0.3s ease;
 }
 
-.copiar {
-    margin: 9% 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.boton-copiar {
+.boton-desencriptar, .boton-copiar {
     background-color: var(--color-fondo-boton);
     border: 1px solid var(--color-primario);
     color: var(--color-primario);
