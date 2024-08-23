@@ -247,22 +247,25 @@ main {
 }
 
 @media (max-width: 920px) {
-
-    body {
-        padding: 0 1% 0 1%;
-    }
     main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 0 2% 0 2%;
+        margin: 3% 0 5% 0;
     }
 
     .seccion-izquierda, .seccion-derecha {
         width: 100%;
     }
 
+    .seccion-derecha {
+        margin-top: 6%;
+    }
+
     .copiar {
-        width: 100%;
+        margin-top: 1%;
+        width: 96%;
     }
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
         width: 100%;
@@ -270,9 +273,5 @@ main {
 
     .ocultar img {
         width: 50%;
-    }
-    
-    .footer {
-        margin-top: 5rem;
     }
 }
