@@ -8,18 +8,19 @@ El "Encriptador de Texto" es una aplicación web diseñada para encriptar y dese
 
 ## Clave de encriptación:
 
-- La letra "e" es convertida para "enter".
-- La letra "i" es convertida para "imes".
-- La letra "a" es convertida para "ai".
-- La letra "o" es convertida para "ober".
-- La letra "u" es convertida para "ufat".
+- Las letras "e" y "E" son convertidas en "enter".
+- Las letras "i" e "I" son convertidas en "imes".
+- Las letras "a" y "A" son convertidas en "ai".
+- Las letras "o" Y "O" son convertidas en "ober".
+- Las letras "u" y "U" son convertidas en "ufat".
+(Todas las mayúsculas son luego convertidas en minúsculas en el CSS para evitar que el usuario deba reescribir el texto.)
 
 ## Funcionalidades:
 
 - **Encriptar Texto**: Transforma el texto ingresado en una forma encriptada utilizando un conjunto definido de reglas de sustitución.
 - **Desencriptar Texto**: Revierte el texto encriptado a su forma original.
 - **Copiar al Portapapeles**: Permite copiar el texto procesado con un simple clic.
-- **Validación de Entrada**: Verifica que el texto ingresado contenga sólo letras minúsculas y espacios, y muestra mensajes de advertencia en caso de error.
+- **Validación de Entrada**: Verifica que el texto ingresado contenga sólo letras sin tildas y espacios, y muestra mensajes de advertencia en caso de error.
 
 ## Tecnologías Utilizadas:
 

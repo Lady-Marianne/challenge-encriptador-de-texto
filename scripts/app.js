@@ -6,11 +6,13 @@ window.onload = function() {document.querySelector('.ocultar').classList.remove(
 
 /* Claves de encriptación:
 
-La letra "e" es convertida para "enter".
-La letra "i" es convertida para "imes".
-La letra "a" es convertida para "ai".
-La letra "o" es convertida para "ober".
-La letra "u" es convertida para "ufat". */
+- Las letras "e" y "E" son convertidas en "enter".
+- Las letras "i" e "I" son convertidas en "imes".
+- Las letras "a" y "A" son convertidas en "ai".
+- Las letras "o" Y "O" son convertidas en "ober".
+- Las letras "u" y "U" son convertidas en "ufat".
+(Todas las mayúsculas son luego convertidas en minúsculas en el CSS para evitar que el usuario deba reescribir el texto.)
+ */
 
 function botonEncriptar() {
     if (areaTexto.value==="") {
