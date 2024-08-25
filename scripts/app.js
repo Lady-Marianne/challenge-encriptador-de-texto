@@ -1,6 +1,6 @@
 const areaTexto = document.querySelector(".area-texto");
 const mensaje = document.querySelector(".texto-procesado");
-const botonCopiar = document.querySelector(".boton-copiar");
+/*const botonCopiar = document.querySelector(".boton-copiar");*/
 
 window.onload = function() {document.querySelector('.ocultar').classList.remove('hidden');};
 
@@ -18,9 +18,9 @@ function botonEncriptar() {
         mensajeError.textContent = "¡Por favor, ingrese un texto o palabra!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
-    else if (/[^a-z\s]/.test(areaTexto.value)) {
+    else if (/[^a-zA-Z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "¡Por favor ingrese sólo minúsculas sin caracteres especiales ni tildes!";
+        mensajeError.textContent = "¡Por favor, no ingrese números ni caracteres especiales ni tildes!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
     else {
@@ -33,7 +33,7 @@ function botonEncriptar() {
  }
 
 function encriptar(cadenaEncriptada) {
-    let matrizCodigo = [["e", "enter"],["i", "imes"],["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let matrizCodigo = [["e", "enter"],["i", "imes"],["a", "ai"], ["o", "ober"], ["u", "ufat"],["E", "enter"],["I", "imes"],["A", "ai"], ["O", "ober"], ["U", "ufat"]];
     for(let i = 0; i < matrizCodigo.length; i++) {
         if(cadenaEncriptada.includes(matrizCodigo[i][0])) {
             cadenaEncriptada = cadenaEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
@@ -48,9 +48,9 @@ function botonDesencriptar() {
         mensajeError.textContent = "¡Por favor, ingrese un texto o palabra!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
     }
-    else if (/[^a-z\s]/.test(areaTexto.value)) {
+    else if (/[^a-zA-Z\s]/.test(areaTexto.value)) {
         var mensajeError = document.getElementById("mensaje-error");
-        mensajeError.textContent = "¡Por favor, ingrese sólo minúsculas sin caracteres especiales ni tildes!";
+        mensajeError.textContent = "¡Por favor, no ingrese números ni caracteres especiales ni tildes!";
         setTimeout(function() {mensajeError.textContent = "";}, 5000);
         return;
     }
@@ -63,7 +63,7 @@ function botonDesencriptar() {
 }
 
 function desencriptar(cadenaDesencriptada) {
-    let matrizCodigo = [["e", "enter"],["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let matrizCodigo = [["e", "enter"],["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"],["E", "enter"],["I", "imes"], ["A", "ai"], ["O", "ober"], ["U", "ufat"]];
     for(let i = 0; i < matrizCodigo.length; i++) {
         if(cadenaDesencriptada.includes(matrizCodigo[i][1])) {
             cadenaDesencriptada = cadenaDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
@@ -83,4 +83,11 @@ function copiar() {
     var mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
     mensajeConfirmacion.textContent = "Texto copiado al portapapeles.";
     setTimeout(function() {mensajeConfirmacion.textContent = "";}, 5000);
+}
+
+function limpiar() {
+    let textoLimpioDerecho = document.getElementById("texto-procesado");
+    textoLimpioDerecho.value = "";
+    let textoLimpioIzquierdo = document.getElementById("area-texto");
+    textoLimpioIzquierdo.value = "";
 }
