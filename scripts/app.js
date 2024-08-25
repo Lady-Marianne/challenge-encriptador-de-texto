@@ -61,7 +61,7 @@ function botonDesencriptar() {
         const textoEncriptado = desencriptar(areaTexto.value);
         mensaje.value = textoEncriptado;
         areaTexto.value = "";
-        document.querySelector('.ocultar').classList.add('hidden'); // Oculta el div 'ocultar'.
+        document.querySelector('.ocultar').classList.add('hidden'); // Oculta el div "ocultar" para mostrar el área de texto.
     }
 }
 

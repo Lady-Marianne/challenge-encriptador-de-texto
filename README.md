@@ -21,6 +21,7 @@ El "Encriptador de Texto" es una aplicación web diseñada para encriptar y dese
 - **Copiar al Portapapeles**: Permite copiar el texto procesado con un simple clic.
 - **Validación de Entrada**: Verifica que el texto ingresado contenga sólo letras sin tildes ni espacios ni múmeros, y muestra mensajes de advertencia en caso de error. Las mayúsculas son manejadas al principio del JavaScript, haciendo que se conviertan automáticamente en
 minúsculas para evitar que el usuario deba reescribir el texto.
+- **Limpiar texto**: Vacía las dos áreas de texto.
 
 ## Tecnologías Utilizadas:
 
@@ -44,6 +45,9 @@ funcionalidades antes de fusionar con la rama principal.
 
 3. **Copiar**:
     - Una vez que el texto procesado esté en el área de texto de la derecha, haz clic en el botón "Copiar" para copiar el texto al portapapeles.
+
+4. **Limpiar**:
+    - Limpia ambas áreas de texto.
 
 ## Estilos:
 
