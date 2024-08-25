@@ -2,6 +2,8 @@
 
 <h2>Challenge: Encriptador de texto.</h2>
 
+- RAMA DE SEGURIDAD: COPIA DE LA VERSIÓN 1.
+
 ## Descripción:
 
 El "Encriptador de Texto" es una aplicación web diseñada para encriptar y desencriptar mensajes usando un algoritmo simple basado en sustituciones de letras. La herramienta está dirigida a usuarios que desean transformar texto en un formato encriptado o desencriptado, facilitando la comunicación segura y la diversión con mensajes codificados.
