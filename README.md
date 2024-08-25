@@ -13,6 +13,7 @@ El "Encriptador de Texto" es una aplicación web diseñada para encriptar y dese
 - Las letras "a" y "A" son convertidas en "ai".
 - Las letras "o" Y "O" son convertidas en "ober".
 - Las letras "u" y "U" son convertidas en "ufat".
+
 (Todas las mayúsculas son luego convertidas en minúsculas en el CSS para evitar que el usuario deba reescribir el texto.)
 
 ## Funcionalidades:
@@ -27,7 +28,8 @@ El "Encriptador de Texto" es una aplicación web diseñada para encriptar y dese
 - **HTML5**: Estructura de la página web.
 - **CSS3**: Diseño y estilos, incluyendo el uso de variables CSS y consultas de medios (media queries) para adaptabilidad.
 - **JavaScript**: Funcionalidad interactiva, manejo de eventos y lógica de encriptación/desencriptación.
-- **GitHub**: Crear, "deployar" y actualizar el repositorio donde se aloja el proyecto.
+- **GitHub**: Crear, "deployar" y actualizar el repositorio donde se aloja el proyecto. Crear diferentes ramas para probar diferentes
+funcionalidades antes de fusionar con la rama principal.
 
 ## Uso:
 

@@ -11,6 +11,7 @@ window.onload = function() {document.querySelector('.ocultar').classList.remove(
 - Las letras "a" y "A" son convertidas en "ai".
 - Las letras "o" Y "O" son convertidas en "ober".
 - Las letras "u" y "U" son convertidas en "ufat".
+
 (Todas las mayúsculas son luego convertidas en minúsculas en el CSS para evitar que el usuario deba reescribir el texto.)
  */
 
@@ -66,6 +67,7 @@ function botonDesencriptar() {
 
 function desencriptar(cadenaDesencriptada) {
     let matrizCodigo = [["e", "enter"],["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"],["E", "enter"],["I", "imes"], ["A", "ai"], ["O", "ober"], ["U", "ufat"]];
+    /*(Todas las mayúsculas son luego convertidas en minúsculas en el CSS para evitar que el usuario deba reescribir el texto.)*/
     for(let i = 0; i < matrizCodigo.length; i++) {
         if(cadenaDesencriptada.includes(matrizCodigo[i][1])) {
             cadenaDesencriptada = cadenaDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
