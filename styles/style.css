@@ -5,8 +5,8 @@
     --fuente-secundaria: "Inter", sans-serif; 
     --color-fondo-boton: #D8DFE8;
     --color-primario: #0A3871;
-    --color-secundario: #ada5ae;
-    --color-terciario: #495057;
+    --color-secundario: #bbb2b4;
+    --color-terciario: #27313d;
     --color-error: #FF0000;
     --color-footer: #baac87;
     }
@@ -79,7 +79,7 @@ main {
     position: relative;
 }
 
-::placeholder {font-family: var(--fuente-secundaria);}
+::placeholder {font-family: var(--fuente-secundaria); color: var(--color-terciario);}
     .area-texto:focus, .texto-procesado:focus {
         outline: none;
     }
@@ -234,7 +234,7 @@ main {
         width: 100%;
     }
 
-    .ocultar img {
+    .munieco {
         width: 40%;
     }
 }
