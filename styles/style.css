@@ -164,6 +164,7 @@ main {
     font-size: 1rem;
     font-weight: 500;
     min-height: 1.5rem;
+    text-align: center;
 }
 
 .mensaje-error {
